@@ -1,3 +1,4 @@
+const {CRTL_C} = require('./constants');
 let connection;
 
 const setupInput = function (conn) {
@@ -14,7 +15,7 @@ const setupInput = function (conn) {
 
   const handleUserInput = function (data) {
     // your code here
-    if (data === '\u0003') {
+    if (data === CRTL_C) {
         process.exit();
       }
 
